@@ -13,42 +13,43 @@ public interface iAlgoritmos {
     
     /**
      * Método que regresa un String con código de un "if"
-     * @param condition
-     * @param statement
-     * @return 
+     * @param condition String con código de la condición
+     * @param statement String con el statement que irá dentro del if
+     * @return String con código del if
      */
     public String ifStatement(String condition, String statement);
     
     /**
      * Método que regresa un String con código de un "if-else"
-     * @param condition
-     * @param statement
-     * @param elseStatement
-     * @return 
+     * @param condition String con código de la condición
+     * @param statement String con el código en caso de que se cumpla la condición del if
+     * @param elseStatement String con código en caso de no cumplirse la condición del if
+     * @return String con código del if-else
      */
     public String ifStatement(String condition, String statement, String elseStatement);
     
     /**
      * Método que regresa un String con código de un Loop o "For"
      * @param initialization
-     * @param condition
+     * @param condition String con código de la condición
      * @param increment
-     * @return 
+     * @param statement  String con el código en caso de que se cumpla la condición
+     * @return String con código del For
      */
     public String loopStatement(String initialization, String condition, String increment, String statement);
     
     /**
      * Método que regresa un String con código de un "print"
      * @param statement
-     * @return 
+     * @return String con código para imprimir en consola
      */
     public String printStatement(String statement);
     
     /**
      * Método que regresa un String con código de un "While"
-     * @param condition
-     * @param statement
-     * @return 
+     * @param condition String con código de la condición
+     * @param statement String con el código en caso de que se cumpla la condición
+     * @return String con condigo del While
      */
     public String whileStatement(String condition, String statement);
 }
